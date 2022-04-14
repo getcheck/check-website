@@ -21,7 +21,7 @@ export const ContactUs = (props: BoxProps) => {
               variant='solid'
               colorScheme='brand'
             >
-              Contuct Us
+              Contact Us
             </Button>
           </Link>
         </Flex>
