@@ -1,0 +1,34 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7872 34.2887L50 18.5774L77.2129 34.2887V65.7113L50 81.4226L22.7872 65.7113V34.2887Z" stroke="url(#paint0_linear_924_654)"/>
+<path d="M26.2513 36.2887L50.0001 22.5774L73.7488 36.2887V63.7113L50.0001 77.4226L26.2513 63.7113V36.2887Z" stroke="url(#paint1_linear_924_654)"/>
+<path d="M29.7153 38.2887L49.9999 26.5774L70.2845 38.2887V61.7113L49.9999 73.4226L29.7153 61.7113V38.2887Z" stroke="url(#paint2_linear_924_654)"/>
+<path d="M33.1794 40.2887L50 30.5774L66.8205 40.2887V59.7113L50 69.4226L33.1794 59.7113V40.2887Z" stroke="url(#paint3_linear_924_654)"/>
+<path d="M36.6436 42.2887L50 34.5774L63.3564 42.2887V57.7113L50 65.4227L36.6436 57.7113V42.2887Z" stroke="url(#paint4_linear_924_654)"/>
+<path d="M50 38L60.3923 44V56L50 62L39.6077 56V44L50 38Z" fill="url(#paint5_radial_924_654)"/>
+<defs>
+<linearGradient id="paint0_linear_924_654" x1="39.5001" y1="18" x2="63.5001" y2="82" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_924_654" x1="40.8126" y1="22" x2="61.8126" y2="78" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_924_654" x1="42.1249" y1="26" x2="60.1249" y2="74" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear_924_654" x1="43.4374" y1="30" x2="58.4374" y2="70" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint4_linear_924_654" x1="44.7499" y1="34" x2="56.7499" y2="66" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint5_radial_924_654" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50 50) rotate(90) scale(12)">
+<stop stop-opacity="0.9"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

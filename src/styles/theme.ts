@@ -1,0 +1,98 @@
+import { ComponentStyleConfig, extendTheme, theme as baseTheme } from '@chakra-ui/react'
+import { Styles } from '@chakra-ui/theme-tools'
+
+const styles: Styles = {
+  global: (props) => ({
+    'html, body': {
+      color: 'black',
+    },
+  }),
+}
+
+const fonts = {
+  body: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+  heading:
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+  mono: 'Menlo, monospace',
+}
+
+const fontSizes = {
+  '3xl': '1.6rem',
+}
+
+const fontWeights = {
+  bold: 600,
+}
+
+const gray = {
+  50: '#f9f9f9',
+  100: '#f6f6f6',
+  200: '#e9e9e9',
+  300: '#d5d5d5',
+  400: '#b0b0b0',
+  500: '#838383',
+  600: '#595959',
+  700: '#3a3a3a',
+  800: '#232323',
+  900: '#1d1d1d',
+}
+const colors = {
+  gray,
+  brand: {
+    50: gray['100'],
+    100: gray['100'],
+    200: gray['100'],
+    300: gray['100'],
+    400: gray['100'],
+    500: baseTheme.colors.black,
+    600: gray['800'],
+    700: gray['800'],
+    800: gray['800'],
+    900: gray['800'],
+  },
+}
+
+const sizes = {
+  container: {
+    md: '860px',
+    lg: '1080px',
+  },
+}
+
+const components = {
+  Link: {
+    baseStyle: {
+      color: 'gray.500',
+      _hover: {
+        color: 'black',
+        textDecoration: 'none',
+      },
+    },
+  } as ComponentStyleConfig,
+  Button: {
+    baseStyle: {
+      fontWeight: 'normal',
+      borderRadius: 'xl',
+    },
+    sizes: {
+      md: {
+        h: 12,
+      },
+      lg: {
+        fontSize: 'lg',
+        px: 7,
+        h: 14,
+      },
+    },
+  } as ComponentStyleConfig,
+}
+
+export const theme = extendTheme({
+  styles,
+  fonts,
+  fontSizes,
+  fontWeights,
+  components,
+  sizes,
+  colors,
+})
