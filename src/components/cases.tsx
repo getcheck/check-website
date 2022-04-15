@@ -43,7 +43,7 @@ export const Cases = (props: BoxProps) => {
           direction={isLargerThan880 ? 'row' : 'column'}
           justify='space-between'
         >
-          <Image src={d1} />
+          <Image src={d1} mb={isLargerThan880 ? '0' : '2rem'} />
           <Box>
             <Heading as='h3' size='lg' mb={4}>
               Authenticity oracle for DeFi/DAO projects
@@ -98,7 +98,7 @@ export const Cases = (props: BoxProps) => {
               </Button>
             </Link>
           </Box>
-          <Image src={d2} ml='4rem' mt={isLargerThan880 ? '' : '2rem'} />
+          <Image src={d2} mt={isLargerThan880 ? '0' : '2rem'} />
         </Flex>
       </Container>
     </Box>

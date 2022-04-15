@@ -17,7 +17,10 @@ export const Navbar = () => {
       <Link as={ReachLink} to='/'>
         <Logo color='white' />
       </Link>
-      <Text color='gray.200'>Copyright 2022 Nowcraft - All Rights Reserved</Text>
+      <Text color='gray.200' whiteSpace='pre-line' textAlign='center'>
+        {isLargerThan740 ? '© 2022 Nowcraft - All Rights Reserved' : '© 2022 Nowcraft'}
+      </Text>
+
       <SocialNetworks colorScheme={'brandWhite'} />
     </Flex>
   )
