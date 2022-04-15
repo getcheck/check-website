@@ -8,6 +8,7 @@ import {
   Center,
   Button,
   Link,
+  useMediaQuery,
 } from '@chakra-ui/react'
 import Card from './card'
 import il1 from '../../assets/illustrations/8.svg'
@@ -18,73 +19,57 @@ import il5 from '../../assets/illustrations/29.svg'
 import il6 from '../../assets/illustrations/1.svg'
 
 export const Features = (props: BoxProps) => {
+  const featuresCards = [
+    {
+      src: il1,
+      title: 'Self-sovereign identity',
+      subtitle: 'Verifiable credentials\n Permissionless',
+    },
+    {
+      src: il2,
+      title: 'Full power of decentralization',
+      subtitle: 'Solana-based registry\n  Decentralized communication on Libp2p',
+    },
+    {
+      src: il3,
+      title: 'Authenticity oracle for DeFi/DAO',
+      subtitle:
+        'Allows projects to verify and authorize their users without collecting/storing\n personal data',
+    },
+    {
+      src: il4,
+      title: 'A decentralized identifier (DID)',
+      subtitle: 'A new type of identifier that enables verifiable, decentralized digital identity',
+    },
+    {
+      src: il5,
+      title: 'End-to-end principle & encryption',
+      subtitle: 'Private data is not collected anywhere and cannot be decrypted',
+    },
+    {
+      src: il6,
+      title: 'Selective disclosure of personal data',
+      subtitle: " Revealing users' identities based on their preferences",
+    },
+  ]
+  const [isLargerThan880] = useMediaQuery('(min-width: 880px)')
   return (
     <Box {...props}>
       <Container maxW='container.lg'>
         <Heading as='h2' size='xl' textAlign='center'>
           Check Protocol in a nutshell
         </Heading>
-        <SimpleGrid columns={2} spacing={7} mt={8}>
-          <Card src={il1}>
-            <Heading as='h3' size='md' mb={2}>
-              Self-sovereign identity
-            </Heading>
-            <Text fontSize='lg' color='gray.500'>
-              Verifiable credentials
-            </Text>
-            <Text fontSize='lg' color='gray.500'>
-              Permissionless
-            </Text>
-          </Card>
-
-          <Card src={il2}>
-            <Heading as='h3' size='md' mb={2}>
-              Full power of decentralization
-            </Heading>
-            <Text fontSize='lg' color='gray.500'>
-              Solana-based registry
-            </Text>
-            <Text fontSize='lg' color='gray.500'>
-              Decentralized communication on Libp2p
-            </Text>
-          </Card>
-
-          <Card src={il3}>
-            <Heading as='h3' size='md' mb={2}>
-              Authenticity oracle for DeFi/DAO
-            </Heading>
-            <Text fontSize='lg' color='gray.500'>
-              Allows projects to verify and authorize their users without collecting/storing
-              personal data
-            </Text>
-          </Card>
-
-          <Card src={il4}>
-            <Heading as='h3' size='md' mb={2}>
-              A decentralized identifier (DID)
-            </Heading>
-            <Text fontSize='lg' color='gray.500'>
-              A new type of identifier that enables verifiable, decentralized digital identity
-            </Text>
-          </Card>
-
-          <Card src={il5}>
-            <Heading as='h3' size='md' mb={2}>
-              End-to-end principle & encryption
-            </Heading>
-            <Text fontSize='lg' color='gray.500'>
-              Private data is not collected anywhere and cannot be decrypted
-            </Text>
-          </Card>
-
-          <Card src={il6}>
-            <Heading as='h3' size='md' mb={2}>
-              Selective disclosure of personal data
-            </Heading>
-            <Text fontSize='lg' color='gray.500'>
-              Revealing users' identities based on their preferences
-            </Text>
-          </Card>
+        <SimpleGrid columns={isLargerThan880 ? 2 : 1} spacing={7} mt={8}>
+          {featuresCards.map(({ src, title, subtitle }) => (
+            <Card src={src}>
+              <Heading as='h3' size='md' mb={2}>
+                {title}
+              </Heading>
+              <Text fontSize='lg' color='gray.500' whiteSpace='pre-line'>
+                {subtitle}
+              </Text>
+            </Card>
+          ))}
         </SimpleGrid>
         <Center mt={7}>
           <Link href='#contact'>

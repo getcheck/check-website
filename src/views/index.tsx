@@ -5,13 +5,11 @@ import Features from '../components/features'
 import Cases from '../components/cases'
 import ContactUs from '../components/contactUs'
 import Footer from '../components/footer'
-import FlyingObjects from '../components/flyingObjects'
 import collect from '../assets/illustrations/12.svg'
-import partner from '../assets/illustrations/97.svg'
 
 export const Root = () => (
   <>
-    <FlyingObjects />
+    {/*<FlyingObjects />*/}
     <Header />
     <Hero mt='5rem' />
     <Center>
@@ -20,9 +18,6 @@ export const Root = () => (
     <Features id='features' />
     <Cases mt='5rem' />
     <ContactUs mt='5rem' id='contact' />
-    <Center mt='1rem'>
-      <Image src={partner} boxSize='12rem' />
-    </Center>
     <Footer mt='2rem' />
   </>
 )

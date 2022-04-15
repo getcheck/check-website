@@ -5,7 +5,7 @@ const styles: Styles = {
   global: (props) => ({
     'html, body': {
       color: 'black',
-      overflowX: 'hidden',
+      scrollBehavior: 'smooth',
     },
   }),
 }
