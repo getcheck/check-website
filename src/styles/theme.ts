@@ -5,6 +5,7 @@ const styles: Styles = {
   global: (props) => ({
     'html, body': {
       color: 'black',
+      overflowX: 'hidden',
     },
   }),
 }
@@ -49,6 +50,18 @@ const colors = {
     700: gray['800'],
     800: gray['800'],
     900: gray['800'],
+  },
+  brandWhite: {
+    50: gray['800'],
+    100: gray['800'],
+    200: gray['800'],
+    300: gray['800'],
+    400: gray['800'],
+    500: baseTheme.colors.white,
+    600: gray['100'],
+    700: gray['100'],
+    800: gray['100'],
+    900: gray['100'],
   },
 }
 

@@ -8,10 +8,10 @@ export const Navbar = () => {
   return (
     <Flex h='8rem' align='center' justify='space-between'>
       <Link as={ReachLink} to='/'>
-        <Logo />
+        <Logo color='white' />
       </Link>
-      <Text color='gray.500'>Copyright 2022 Nowcraft - All Rights Reserved</Text>
-      <SocialNetworks />
+      <Text color='gray.200'>Copyright 2022 Nowcraft - All Rights Reserved</Text>
+      <SocialNetworks colorScheme={'brandWhite'} />
     </Flex>
   )
 }

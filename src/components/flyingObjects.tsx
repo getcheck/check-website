@@ -5,7 +5,7 @@ import obj2 from '../assets/illustrations/20.svg'
 
 export const FlyingObjects = (props: BoxProps) => {
   const { scrollY } = useViewportScroll()
-  const y1 = useTransform(scrollY, [0, 5000], [900, 2000])
+  const y1 = useTransform(scrollY, [0, 5000], [700, 2000])
   const y2 = useTransform(scrollY, [0, 5000], [1600, -100])
 
   return (

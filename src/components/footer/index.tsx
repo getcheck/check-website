@@ -3,7 +3,7 @@ import Navbar from './navbar'
 
 export const Footer = (props: BoxProps) => {
   return (
-    <Box {...props} borderTop='1px' borderColor='blackAlpha.200'>
+    <Box {...props} bg='black'>
       <Container maxW='container.lg'>
         <Navbar />
       </Container>

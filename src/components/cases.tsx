@@ -22,7 +22,7 @@ export const Cases = (props: BoxProps) => {
       <Container maxW='container.lg'>
         <Flex align='center'>
           <Image src={d1} />
-          <Box ml='4rem' pr='2rem'>
+          <Box ml='4rem' pr='2rem' flex='1'>
             <Heading as='h3' size='lg' mb={4}>
               Authenticity oracle for DeFi/DAO projects
             </Heading>
@@ -53,7 +53,7 @@ export const Cases = (props: BoxProps) => {
         </Flex>
 
         <Flex mt='5rem'>
-          <Box pl='2rem'>
+          <Box pl='2rem' flex='1'>
             <Heading as='h3' size='lg' mb={4}>
               Integration with Web 2.0
             </Heading>
