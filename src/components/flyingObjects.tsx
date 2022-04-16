@@ -5,8 +5,8 @@ import obj2 from '../assets/illustrations/20.svg'
 
 export const FlyingObjects = (props: BoxProps) => {
   const { scrollY } = useViewportScroll()
-  const y1 = useTransform(scrollY, [0, 5000], [700, 2000])
-  const y2 = useTransform(scrollY, [0, 5000], [1600, -100])
+  const y1 = useTransform(scrollY, [0, 3000], [1100, -100])
+  const y2 = useTransform(scrollY, [0, 3000], [2200, -100])
 
   return (
     <Box {...props} height={0}>
@@ -14,7 +14,7 @@ export const FlyingObjects = (props: BoxProps) => {
         <Box
           as={motion.div}
           boxSize='20rem'
-          style={{ y: y1, x: -10 }}
+          style={{ y: y1, x: -10, rotateZ: -5 }}
           position='absolute'
           left='-20rem'
         >
@@ -23,7 +23,7 @@ export const FlyingObjects = (props: BoxProps) => {
         <Box
           as={motion.div}
           boxSize='20rem'
-          style={{ y: y2, x: 0, rotateZ: -70 }}
+          style={{ y: y2, x: 0, rotateZ: -60 }}
           position='absolute'
           right='-20rem'
         >
