@@ -11,7 +11,7 @@ export const Navbar = () => {
   })
 
   return (
-    <Flex h='8rem' align='center' justify='space-between'>
+    <Flex h={['4rem', '5rem', '8rem']} align='center' justify='space-between'>
       <Link as={ReachLink} to='/'>
         <Logo color='white' />
       </Link>

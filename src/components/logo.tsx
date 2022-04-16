@@ -5,7 +5,9 @@ import logoWhite from '../assets/logo-white.svg'
 
 export const Logo = (props: ImageProps) => {
   const { color } = props
-  return <Image {...props} h={6} src={color === 'white' ? logoWhite : logo} alt='Check Protocol' />
+  return (
+    <Image {...props} h={[4, 6]} src={color === 'white' ? logoWhite : logo} alt='Check Protocol' />
+  )
 }
 
 export default Logo

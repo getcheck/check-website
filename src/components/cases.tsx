@@ -46,7 +46,7 @@ export const Cases = (props: BoxProps) => {
               </ListItem>
             </List>
             <Link href='#contact'>
-              <Button variant='outline' colorScheme='brand' mt={5}>
+              <Button variant='outline' colorScheme='brand' mt={5} w={['100%', 'auto']}>
                 Get Started
               </Button>
             </Link>
@@ -86,7 +86,7 @@ export const Cases = (props: BoxProps) => {
               </ListItem>
             </List>
             <Link href='#contact'>
-              <Button variant='outline' colorScheme='brand' mt={5}>
+              <Button variant='outline' colorScheme='brand' mt={5} w={['100%', 'auto']}>
                 Get Started
               </Button>
             </Link>

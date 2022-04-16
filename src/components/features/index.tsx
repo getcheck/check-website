@@ -24,7 +24,7 @@ export const Features = (props: BoxProps) => {
         <Heading as='h2' size='xl' textAlign='center'>
           Check Protocol in a nutshell
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 4, lg: 7 }} mt={8}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 4, lg: 7 }} mt={[4, 8]}>
           <Card src={il1}>
             <Heading as='h3' size='md' mb={2}>
               Self-sovereign identity
