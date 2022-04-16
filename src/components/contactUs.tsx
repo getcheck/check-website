@@ -5,8 +5,16 @@ export const ContactUs = (props: BoxProps) => {
   return (
     <Box {...props}>
       <Container maxW='container.lg'>
-        <Flex align='center' justify='space-between' px={8} py={6} bg='gray.100' borderRadius='2xl'>
-          <Box>
+        <Flex
+          align={{ base: 'stretch', md: 'center' }}
+          justify='space-between'
+          direction={{ base: 'column', md: 'row' }}
+          px={{ base: 6, md: 8 }}
+          py={{ base: 5, md: 6 }}
+          bg='gray.100'
+          borderRadius='2xl'
+        >
+          <Box mb={{ base: 4, md: 0 }}>
             <Heading as='h2' size='lg' mb={1}>
               Let's build something great
             </Heading>
@@ -20,6 +28,7 @@ export const ContactUs = (props: BoxProps) => {
               size='lg'
               variant='solid'
               colorScheme='brand'
+              w={['100%', 'auto']}
             >
               Contact Us
             </Button>

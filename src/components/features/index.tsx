@@ -24,7 +24,7 @@ export const Features = (props: BoxProps) => {
         <Heading as='h2' size='xl' textAlign='center'>
           Check Protocol in a nutshell
         </Heading>
-        <SimpleGrid columns={2} spacing={7} mt={8}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 4, lg: 7 }} mt={8}>
           <Card src={il1}>
             <Heading as='h3' size='md' mb={2}>
               Self-sovereign identity
@@ -86,9 +86,9 @@ export const Features = (props: BoxProps) => {
             </Text>
           </Card>
         </SimpleGrid>
-        <Center mt={7}>
-          <Link href='#contact'>
-            <Button size='lg' variant='solid' colorScheme='brand'>
+        <Center mt={[4, 7]}>
+          <Link href='#contact' w={['100%', 'auto']}>
+            <Button size='lg' variant='solid' colorScheme='brand' w='100%'>
               Learn More
             </Button>
           </Link>

@@ -11,6 +11,7 @@ import {
   Text,
   Button,
   Link,
+  Stack,
 } from '@chakra-ui/react'
 import { CircleIcon } from './icons'
 import d1 from '../assets/diagrams/1.svg'
@@ -20,9 +21,9 @@ export const Cases = (props: BoxProps) => {
   return (
     <Box {...props}>
       <Container maxW='container.lg'>
-        <Flex align='center'>
+        <Stack align='center' spacing='2rem' direction={{ base: 'column', lg: 'row' }}>
           <Image src={d1} />
-          <Box ml='4rem' pr='2rem' flex='1'>
+          <Box px={{ base: '1rem', md: '2rem' }} w={['100%', '80%']}>
             <Heading as='h3' size='lg' mb={4}>
               Authenticity oracle for DeFi/DAO projects
             </Heading>
@@ -50,10 +51,16 @@ export const Cases = (props: BoxProps) => {
               </Button>
             </Link>
           </Box>
-        </Flex>
+        </Stack>
 
-        <Flex mt='5rem'>
-          <Box pl='2rem' flex='1'>
+        <Stack
+          align='center'
+          mt={{ base: '2rem', lg: '5rem' }}
+          spacing='2rem'
+          direction={{ base: 'column-reverse', lg: 'row' }}
+          order='revert'
+        >
+          <Box px={{ base: '1rem', md: '2rem' }} w={['100%', '80%']}>
             <Heading as='h3' size='lg' mb={4}>
               Integration with Web 2.0
             </Heading>
@@ -84,8 +91,8 @@ export const Cases = (props: BoxProps) => {
               </Button>
             </Link>
           </Box>
-          <Image src={d2} ml='4rem' />
-        </Flex>
+          <Image src={d2} />
+        </Stack>
       </Container>
     </Box>
   )
