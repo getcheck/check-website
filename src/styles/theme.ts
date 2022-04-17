@@ -68,7 +68,7 @@ const colors = {
 const sizes = {
   container: {
     md: '860px',
-    lg: '1080px',
+    lg: '1120px',
   },
 }
 
@@ -84,8 +84,8 @@ const components = {
   } as ComponentStyleConfig,
   Button: {
     baseStyle: {
-      fontWeight: 'normal',
-      borderRadius: 'xl',
+      fontWeight: 'medium',
+      borderRadius: 'lg',
     },
     sizes: {
       md: {

@@ -1,20 +1,16 @@
-import { Center, Image, useBreakpointValue } from '@chakra-ui/react'
+import { Center, Image } from '@chakra-ui/react'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Features from '../components/features'
 import Cases from '../components/cases'
 import ContactUs from '../components/contactUs'
 import Footer from '../components/footer'
-import FlyingObjects from '../components/flyingObjects'
 import collect from '../assets/illustrations/12.svg'
 import partner from '../assets/illustrations/97.svg'
 
 export const Root = () => {
-  const hasFlyingObjects = useBreakpointValue({ xl: true })
-
   return (
     <>
-      {hasFlyingObjects && <FlyingObjects />}
       <Header />
       <Hero mt='4rem' />
       <Center>

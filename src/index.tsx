@@ -6,7 +6,7 @@ import { theme } from './styles/theme'
 import Root from './views'
 
 export const App = () => (
-  <ChakraProvider theme={theme}>
+  <ChakraProvider resetCSS theme={theme}>
     <Root />
   </ChakraProvider>
 )
