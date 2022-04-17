@@ -14,7 +14,7 @@ export const FlyingObjects = (props: BoxProps) => {
         <Box
           as={motion.div}
           boxSize='20rem'
-          style={{ y: y1, x: -10, rotateZ: -5 }}
+          style={{ y: y1, x: -10 }}
           position='absolute'
           left='-20rem'
         >

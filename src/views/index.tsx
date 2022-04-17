@@ -16,7 +16,7 @@ export const Root = () => {
     <>
       {hasFlyingObjects && <FlyingObjects />}
       <Header />
-      <Hero mt='5rem' />
+      <Hero mt='4rem' />
       <Center>
         <Image src={collect} boxSize={['8rem', '12rem', '16rem']} />
       </Center>

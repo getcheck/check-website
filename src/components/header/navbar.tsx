@@ -9,7 +9,7 @@ export const Navbar = () => {
   const hasNav = useBreakpointValue({ md: true })
 
   return (
-    <Flex h={['3.5rem', '4rem', '5rem']} align='center' justify='space-between'>
+    <Flex h={['3.5rem', '4rem']} align='center' justify='space-between'>
       <Link as={ReachLink} to='/'>
         <Logo />
       </Link>
