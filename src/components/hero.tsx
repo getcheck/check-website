@@ -24,7 +24,7 @@ export const Hero = (props: BoxProps) => {
         textAlign='center'
       >
         <Box px={['1rem', '2rem']}>
-          <Heading as='h1' size='2xl' fontSize={['3xl', '4xl', '5xl']} lineHeight='normal'>
+          <Heading as='h1' size='2xl' lineHeight='normal'>
             Self-sovereign, anonymous, verifiable credentials in Web 3.0
           </Heading>
           <Text mt={5} fontSize={['xl', '2xl']} color='gray.500'>
