@@ -93,6 +93,7 @@ const components = {
       },
       lg: {
         fontSize: 'lg',
+        borderRadius: 'xl',
         px: 7,
         h: 14,
       },
