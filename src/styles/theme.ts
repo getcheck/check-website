@@ -99,6 +99,13 @@ const components = {
       },
     },
   } as ComponentStyleConfig,
+  Alert: {
+    baseStyle: {
+      container: {
+        borderRadius: 'lg',
+      },
+    },
+  } as ComponentStyleConfig,
 }
 
 export const theme = extendTheme({

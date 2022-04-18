@@ -23,7 +23,7 @@ export const Hero = (props: BoxProps) => {
         pb={['1rem', '2rem']}
         textAlign='center'
       >
-        <Box px={['1rem', '2rem']}>
+        <Box px={[0, '1rem']}>
           <Heading as='h1' size='2xl' lineHeight='normal'>
             Self-sovereign, anonymous, verifiable credentials in Web 3.0
           </Heading>
@@ -57,7 +57,7 @@ export const Hero = (props: BoxProps) => {
             </Link>
           </Stack>
         </Center>
-        <Center mt={12}>
+        <Center mt={[6, 12]}>
           <Flex align='center'>
             <Text>Powered by</Text>
             <Image src={solana} alt='Solana' h='1rem' ml={3} />
