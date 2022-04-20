@@ -22,7 +22,7 @@ const fontSizes = {
 }
 
 const fontWeights = {
-  bold: 600,
+  bold: 700,
 }
 
 const gray = {
@@ -75,7 +75,7 @@ const sizes = {
 const components = {
   Link: {
     baseStyle: {
-      color: 'gray.500',
+      color: 'gray.600',
       _hover: {
         color: 'black',
         textDecoration: 'none',
@@ -85,16 +85,25 @@ const components = {
   Button: {
     baseStyle: {
       fontWeight: 'medium',
-      borderRadius: 'lg',
+      borderRadius: 'full',
     },
     sizes: {
+      xs: {
+        fontSize: 'sm',
+        h: 7,
+      },
+      sm: {
+        fontSize: 'md',
+        h: 9,
+      },
       md: {
+        fontSize: 'lg',
         h: 12,
       },
       lg: {
-        fontSize: 'lg',
-        borderRadius: 'xl',
-        px: 7,
+        fontSize: 'xl',
+        borderRadius: '2xl',
+        px: 6,
         h: 14,
       },
     },

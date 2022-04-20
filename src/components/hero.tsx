@@ -24,18 +24,18 @@ export const Hero = (props: BoxProps) => {
         textAlign='center'
       >
         <Box px={[0, '1rem']}>
-          <Heading as='h1' size='2xl' lineHeight='normal'>
+          <Heading as='h1' size='2xl' lineHeight={['none', 'normal']}>
             Self-sovereign, anonymous, verifiable credentials in Web 3.0
           </Heading>
-          <Text mt={5} fontSize={['xl', '2xl']} color='gray.500'>
-            Check Protocol is a Solana-based blockchain protocol that allows users to issue
+          <Text mt={5} fontSize={['xl', '2xl']} color='gray.600'>
+            Check Protocol is a blockchain-based protocol that allows users to issue
             self-sufficient, anonymous, verifiable credentials.
           </Text>
         </Box>
         <Center mt={8}>
           <Stack
             align='stretch'
-            spacing={[3, 6]}
+            spacing={[3, 5]}
             direction={['column', 'row']}
             w={['100%', 'auto']}
           >

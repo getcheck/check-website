@@ -29,10 +29,10 @@ export const Features = (props: BoxProps) => {
             <Heading as='h3' size='md' mb={2}>
               Self-sovereign identity
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Verifiable credentials
             </Text>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Permissionless
             </Text>
           </Card>
@@ -41,10 +41,10 @@ export const Features = (props: BoxProps) => {
             <Heading as='h3' size='md' mb={2}>
               Full power of decentralization
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Solana-based registry
             </Text>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Decentralized communication on Libp2p
             </Text>
           </Card>
@@ -53,7 +53,7 @@ export const Features = (props: BoxProps) => {
             <Heading as='h3' size='md' mb={2}>
               Authenticity oracle for DeFi/DAO
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Allows projects to verify and authorize their users without collecting/storing
               personal data
             </Text>
@@ -63,7 +63,7 @@ export const Features = (props: BoxProps) => {
             <Heading as='h3' size='md' mb={2}>
               A decentralized identifier (DID)
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               A new type of identifier that enables verifiable, decentralized digital identity
             </Text>
           </Card>
@@ -72,7 +72,7 @@ export const Features = (props: BoxProps) => {
             <Heading as='h3' size='md' mb={2}>
               End-to-end principle & encryption
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Private data is not collected anywhere and cannot be decrypted
             </Text>
           </Card>
@@ -81,7 +81,7 @@ export const Features = (props: BoxProps) => {
             <Heading as='h3' size='md' mb={2}>
               Selective disclosure of personal data
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Revealing users' identities based on their preferences
             </Text>
           </Card>

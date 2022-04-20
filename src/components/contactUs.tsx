@@ -18,7 +18,7 @@ export const ContactUs = (props: BoxProps) => {
             <Heading as='h2' size='lg' mb={1}>
               Let's build something great
             </Heading>
-            <Text fontSize='lg' color='gray.500'>
+            <Text fontSize='lg' color='gray.600'>
               Interested in becoming a partner? Reach out to us on Telegram.
             </Text>
           </Box>
