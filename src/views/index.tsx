@@ -1,4 +1,4 @@
-import { Center, Image } from '@chakra-ui/react'
+import { Alert, AlertIcon, Box, Center, Image, Link } from '@chakra-ui/react'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Features from '../components/features'
@@ -12,7 +12,25 @@ export const Root = () => {
   return (
     <>
       <Header />
-      <Hero mt='4rem' />
+      <Box mt='80px'>
+        <Alert
+          as={Link}
+          href='https://solana.com/news/riptide-hackathon-winners-solana'
+          target='_blank'
+          _focus={{ boxShadow: 'none' }}
+          color='black'
+          mb='-48px'
+          status='info'
+          colorScheme='brand'
+          justifyContent='center'
+          borderRadius={0}
+          display={{ base: 'none', md: 'flex' }}
+        >
+          <AlertIcon />
+          Check Protocol won a Company Prize in the Solana Riptide Hackathon! 🎉
+        </Alert>
+        <Hero />
+      </Box>
       <Center>
         <Image src={collect} boxSize={['8rem', '12rem', '16rem']} />
       </Center>
