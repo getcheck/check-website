@@ -4,9 +4,11 @@ import { createRoot } from 'react-dom/client'
 import * as serviceWorker from './serviceWorker'
 import { theme } from './styles/theme'
 import Root from './views'
+import Fonts from './styles/fonts'
 
 export const App = () => (
   <ChakraProvider resetCSS theme={theme}>
+    <Fonts />
     <Root />
   </ChakraProvider>
 )

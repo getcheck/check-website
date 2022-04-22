@@ -13,7 +13,7 @@ const styles: Styles = {
 const fonts = {
   body: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   heading:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    '"Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   mono: 'Menlo, monospace',
 }
 
@@ -22,7 +22,7 @@ const fontSizes = {
 }
 
 const fontWeights = {
-  bold: 700,
+  bold: 600,
 }
 
 const gray = {
@@ -73,6 +73,11 @@ const sizes = {
 }
 
 const components = {
+  Heading: {
+    baseStyle: {
+      letterSpacing: '-0.01em',
+    },
+  },
   Link: {
     baseStyle: {
       color: 'gray.600',
@@ -84,7 +89,7 @@ const components = {
   } as ComponentStyleConfig,
   Button: {
     baseStyle: {
-      fontWeight: 'medium',
+      fontWeight: 'regular',
       borderRadius: 'full',
     },
     sizes: {
