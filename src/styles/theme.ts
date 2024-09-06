@@ -2,7 +2,7 @@ import { ComponentStyleConfig, extendTheme, theme as baseTheme } from '@chakra-u
 import { Styles } from '@chakra-ui/theme-tools'
 
 const styles: Styles = {
-  global: (props) => ({
+  global: () => ({
     'html, body': {
       color: 'black',
       overflowX: 'hidden',
