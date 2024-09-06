@@ -1,4 +1,3 @@
-import React from 'react'
 import { Image, ImageProps } from '@chakra-ui/react'
 import logo from '../assets/logo.svg'
 import logoWhite from '../assets/logo-white.svg'

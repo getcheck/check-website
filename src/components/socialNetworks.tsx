@@ -1,4 +1,3 @@
-import React from 'react'
 import { HStack, BoxProps, IconButton, Link, Box, ThemingProps } from '@chakra-ui/react'
 import { DiscordIcon, GithubIcon, TelegramIcon, TwitterIcon } from './icons'
 

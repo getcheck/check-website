@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Flex, Link, useBreakpointValue } from '@chakra-ui/react'
-import { Link as ReachLink } from '@reach/router'
 import Logo from '../logo'
 import SocialNetworks from '../socialNetworks'
 import Nav from './nav'
-import { useViewportScroll } from 'framer-motion'
+import { useScroll } from 'framer-motion'
 
 export const Navbar = () => {
   const hasNav = useBreakpointValue({ md: true })
-  const { scrollY } = useViewportScroll()
+  const { scrollY } = useScroll()
   const [isShrunk, setShrunk] = useState(false)
 
   useEffect(() => {
-    scrollY.onChange((y) => {
+    scrollY.on('change', (y) => {
       setShrunk((isShrunk) => {
         if (!isShrunk && y > 80) {
           return true
@@ -36,7 +35,7 @@ export const Navbar = () => {
       justify='space-between'
       transition='height 0.2s ease'
     >
-      <Link as={ReachLink} to='/'>
+      <Link href="#">
         <Logo />
       </Link>
       {hasNav && <Nav />}
